@@ -1,8 +1,34 @@
+
+
 body {
+	font-family: 'PT Sans Narrow', sans-serif;
 	background-color: darkgray;
 }
 
+.header {
+	background-image: url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/944351_4256304505983_281593336_n.jpg?oh=b655eed605894570b41ac9c2390644f0&oe=58F396E7);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	display: block;
+	height: 726px;
+}
+
+.intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#head-title {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* TYPED CURSOR */
+
 .typed-cursor{
+	font-family: 'Open Sans Condensed', sans-serif;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -49,7 +75,6 @@ body {
 }
 
 .menu h1.logo a {
-	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 0.15em;
@@ -60,7 +85,7 @@ body {
 }
 
 .menu h1.logo a:hover {
-	color: #f85c37;
+	color: #fff;
 }
 
 .menu img.logo {
