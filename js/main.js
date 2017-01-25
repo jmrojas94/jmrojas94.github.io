@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	$(".about-title").autofix_anything({
+	  customOffset: false, 
+	  manual: false, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
+	  onlyInContainer: false // Set this to false if you don't want the fixed container to limit itself to the parent's container.
+	});
+
+
 	var counter = 0;
 	var c = 0;
 	var i = setInterval(function(){
@@ -31,6 +38,7 @@ $(document).ready(function(){
 	});
 
 	$('a[href*="#"]:not([href="#"])').click(function() {
+		$('#menu').toggleClass('menu-open');
 	  	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 	    	var target = $(this.hash);
 	    	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -41,6 +49,18 @@ $(document).ready(function(){
 	      		return false;
 	    	}
 	  	}
+	});
+
+	var selectedClass = "";
+	$("p").click(function(){
+		selectedClass = $(this).attr("data-rel");
+    	$("#portfolio").fadeTo(100, 0.1);
+		$("#portfolio div").not("."+selectedClass).fadeOut();
+	    setTimeout(function() {
+	      	$("."+selectedClass).fadeIn();
+	      	$("#portfolio").fadeTo(500, 1);
+	    }, 500);
+		
 	});
 })
 
