@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/3ba954d695.js"></script>
     <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/autofix_anything.css" />
@@ -119,26 +121,84 @@
 	                	
 						<div style="clear:both;"></div>
 						<div id="portfolio">
-							<a href=""><div class="tile dev all">
-								<h5>Peribit</h5></a>
-							</div>
-							<a href=""><div class="tile dev all">
-								<h5>Top-Tracks</h5></a>
-							</div>
-							<a href=""><div class="tile design all">
-								<h5>Of Grand Design - Travelers</h5></a>
-							</div>
-							<a href=""><div class="tile design all">
-								<h5>Of Grand Design - Unbreakable</h5></a>
-							</div>
-							<a href=""><div class="tile design all">
-								<h5>Of Grand Design - Dead King</h5></a>
-							</div>
+							<a id="demo01" href="#animatedModal1"><div class="tile dev all">
+								<h5>Peribit</h5>
+							</div></a>
+							<a id="demo02" href="#animatedModal2"><div class="tile dev all">
+								<h5>Top-Tracks</h5>
+							</div></a>
+							<a id="demo03" href="#animatedModal3"><div class="tile design all">
+								<h5>Of Grand Design - Travelers</h5>
+							</div></a>
+							<a id="demo04" href="#animatedModal4"><div class="tile design all">
+								<h5>Of Grand Design - Unbreakable</h5>
+							</div></a>
+							<a id="demo05" href="#animatedModal5"><div class="tile design all">
+								<h5>Of Grand Design - Dead King</h5>
+							</div></a>
 						</div>
 	                </div>
         		</div>
         	</div>
         </div>
+
+	    <!--Modals-->
+	    <div id="animatedModal1">
+	        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	        <div id="btn-close-modal" class="close-animatedModal1"> 
+	            CLOSE MODAL
+	        </div>
+	            
+	        <div class="modal-content">
+	                  <!--Your modal content goes here-->
+	        </div>
+	    </div>
+
+	    <div id="animatedModal2">
+	        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	        <div id="btn-close-modal" class="close-animatedModal2"> 
+	            CLOSE MODAL
+	        </div>
+	            
+	        <div class="modal-content">
+	                <h1>hello</h1>
+	        </div>
+	    </div>
+
+	    <div id="animatedModal3">
+	        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	        <div id="btn-close-modal" class="close-animatedModal3"> 
+	            CLOSE MODAL
+	        </div>
+	            
+	        <div class="modal-content">
+	                <h1>bye</h1>
+	        </div>
+	    </div>
+
+	    <div id="animatedModal4">
+	        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	        <div id="btn-close-modal" class="close-animatedModal4"> 
+	            CLOSE MODAL
+	        </div>
+	            
+	        <div class="modal-content">
+	                <h1>hello</h1>
+	        </div>
+	    </div>
+
+	    <div id="animatedModal5">
+	        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	        <div id="btn-close-modal" class="close-animatedModal5"> 
+	            CLOSE MODAL
+	        </div>
+	            
+	        <div class="modal-content">
+	                <h1>bye</h1>
+	        </div>
+	    </div>
+
+
     </div>
 		
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -149,8 +209,9 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="js/jquery.lettering-0.6.min.js"></script>
-    <script type="text/javascript" src="js/jquery.autofix.js"></script>
-    <script src="js/typed.js"></script>
+    <script type="text/javascript" src="js/jquery.autofix.min.js"></script>
+    <script type="text/javascript" src="js/animatedModal.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script>
     $(function() {
         $("#head-title").typed({
@@ -165,23 +226,18 @@
     <script>
     	$.stellar();
     </script>
-	<script type="text/javascript" charset="utf-8">
-    	$(window).load(function(){
-      		$().hatchShow();
-		});		
-    	jQuery.fn.hatchShow = function(){
-      		$('.hsjs').css('display','inner-block').css('white-space','pre').each(function(){
-	        	var t = $(this);
-	        	t.wrap("<span class='hatchshow_temp' style='display:block'>");
-	        	var pw = t.parent().width();
-	        	while( t.width() < pw ){t.css('font-size', (t.fontSize()+1)+"px"),
-	          		function(){while( t.width() > pw ){t.css('font-size', (t.fontSize()-.1)+"px")}};
-	        	};
-      		}).css('visibility','visible');
-    	};
-    	jQuery.fn.fontSize = function(){return parseInt($(this).css('font-size').replace('px',''));};
-
-  	</script>
+	<script>
+	  	$("#demo01").animatedModal({
+                modalTarget:'animatedModal1'});
+	  	$("#demo02").animatedModal({
+                modalTarget:'animatedModal2'});
+	  	$("#demo03").animatedModal({
+                modalTarget:'animatedModal3'});
+	  	$("#demo04").animatedModal({
+                modalTarget:'animatedModal4'});
+	  	$("#demo05").animatedModal({
+                modalTarget:'animatedModal5'});
+	</script>
 </body>
 
 </html>
