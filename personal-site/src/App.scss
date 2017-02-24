@@ -98,7 +98,6 @@ background-color: $fav-black;
 	line-height: 120%;
 	h3 {
 		text-align: center;
-		font-size: 2.5em;
 	}
 }
 
@@ -465,7 +464,7 @@ background-color: $fav-black;
 
 
 /* Small devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px ) { 
+@media only screen and (max-width: 767px ) { 
 	.about-title {
 		width: 100vw;
 		height: 100vh;
@@ -485,7 +484,7 @@ background-color: $fav-black;
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px ) { }
 
-@media only screen and (min-width: 768px ) {
+@media only screen and (min-width: 767px ) {
 	.autofix_sb.fixed {
   position: fixed !important;
   left: auto;

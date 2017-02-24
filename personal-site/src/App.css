@@ -52,8 +52,7 @@ h2 {
   line-height: 120%; }
 
 .about-content h3 {
-  text-align: center;
-  font-size: 2.5em; }
+  text-align: center; }
 
 .skills-section {
   display: block;
@@ -379,7 +378,7 @@ h2 {
   display: inline-block; }
 
 /* Small devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .about-title {
     width: 100vw;
     height: 100vh; }
@@ -390,7 +389,7 @@ h2 {
     display: none; } }
 
 /* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .autofix_sb.fixed {
     position: fixed !important;
     left: auto;
