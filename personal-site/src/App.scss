@@ -44,7 +44,7 @@ body {
 h2 {
 	font-family: $font_0;
 }
-.header {
+.App-header {
 	background-image: $url_0;
 	background-size: cover;
 	background-position: center center; 
@@ -95,7 +95,6 @@ background-color: $fav-black;
 }
 
 .about-content {
-	padding: 50px;
 	line-height: 120%;
 	h3 {
 		text-align: center;
@@ -461,4 +460,52 @@ background-color: $fav-black;
 		display: inline-block;
 	}
 }
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px ) { 
+	.about-title {
+		width: 100vw;
+		height: 100vh;
+	}
+
+
+	.about-me {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.hex {
+		display: none;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px ) { }
+
+@media only screen and (min-width: 768px ) {
+	.autofix_sb.fixed {
+  position: fixed !important;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  height: 100%;
+  width: 50%;
+  overflow:auto;
+}
+
+.autofix_sb.fixed.bottom {
+  bottom: 0;
+  position: absolute !important;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px ) {
+	
+}
+
 

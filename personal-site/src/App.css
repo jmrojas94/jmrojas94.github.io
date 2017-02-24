@@ -4,7 +4,7 @@ body {
 h2 {
   font-family: "Raleway", sans-serif; }
 
-.header {
+.App-header {
   background-image: url(../public/images/saltlake3.jpg);
   background-size: cover;
   background-position: center center;
@@ -28,8 +28,9 @@ h2 {
   position: relative;
   display: block;
   height: 100vh; }
-  .about-section h2 {
-    color: #808080; }
+
+.about-section h2 {
+  color: #808080; }
 
 .about-title {
   width: 50%;
@@ -38,8 +39,9 @@ h2 {
   height: 100vh;
   z-index: -2;
   background-color: #1a1a1a; }
-  .about-title .content-header {
-    margin: 50% auto; }
+
+.about-title .content-header {
+  margin: 50% auto; }
 
 .about-me {
   width: 50%;
@@ -47,11 +49,11 @@ h2 {
   margin: 0 auto; }
 
 .about-content {
-  padding: 50px;
   line-height: 120%; }
-  .about-content h3 {
-    text-align: center;
-    font-size: 2.5em; }
+
+.about-content h3 {
+  text-align: center;
+  font-size: 2.5em; }
 
 .skills-section {
   display: block;
@@ -59,24 +61,27 @@ h2 {
   z-index: 1;
   background-color: #1a1a1a;
   margin-top: 200px; }
-  .skills-section h2 {
-    color: #808080; }
+
+.skills-section h2 {
+  color: #808080; }
 
 .project-section {
   display: block;
   height: 100vh;
   z-index: 1;
   background-color: #1a1a1a; }
-  .project-section h2 {
-    color: #808080; }
+
+.project-section h2 {
+  color: #808080; }
 
 .contact-section {
   display: block;
   height: 100vh;
   z-index: 1;
   background-color: #1a1a1a; }
-  .contact-section h2 {
-    color: #808080; }
+
+.contact-section h2 {
+  color: #808080; }
 
 #head-title {
   font-family: "Raleway", sans-serif, "Raleway", sans-serif; }
@@ -119,43 +124,51 @@ h2 {
   z-index: 10;
   text-align: left;
   transition: all .3s ease; }
-  .menu.menu-open {
-    right: 0; }
-  .menu a {
-    margin-left: 20px;
-    color: #808080;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase; }
-    .menu a:hover {
-      color: #ffffff; }
-    .menu a:active {
-      color: #ffffff; }
-    .menu a > i {
-      float: left;
-      display: inline-block;
-      vertical-align: middle;
-      text-align: left;
-      width: 25px;
-      font-size: 14px;
-      line-height: 40px;
-      margin: 25px 2px; }
-  .menu h1.logo a {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 20px; }
-    .menu h1.logo a:hover {
-      color: #ffffff; }
-  .menu img.logo {
-    margin: 20px 0;
-    max-width: 160px; }
+
+.menu.menu-open {
+  right: 0; }
+
+.menu a {
+  margin-left: 20px;
+  color: #808080;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.menu a:hover {
+  color: #ffffff; }
+
+.menu a:active {
+  color: #ffffff; }
+
+.menu a > i {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 25px;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 25px 2px; }
+
+.menu h1.logo a {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 20px; }
+
+.menu h1.logo a:hover {
+  color: #ffffff; }
+
+.menu img.logo {
+  margin: 20px 0;
+  max-width: 160px; }
 
 .menu-wrap {
   position: absolute;
@@ -177,9 +190,10 @@ h2 {
   top: 20px;
   right: 5px;
   transition: all .1s ease-in-out; }
-  .menu-close:hover {
-    color: #ffffff;
-    transition: all .1s ease-in-out; }
+
+.menu-close:hover {
+  color: #ffffff;
+  transition: all .1s ease-in-out; }
 
 .body-push {
   overflow-x: hidden;
@@ -207,10 +221,11 @@ h2 {
   line-height: 40px;
   cursor: pointer;
   transition: all .1s ease-in-out; }
-  #menuToggle:hover {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.2);
-    transition: all .1s ease-in-out; }
+
+#menuToggle:hover {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all .1s ease-in-out; }
 
 .loading-page {
   background: #1a1a1a;
@@ -219,30 +234,36 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .loading-page .counter {
-    text-align: center;
-    position: relative;
-    width: 200px; }
-    .loading-page .counter p {
-      font-size: 40px;
-      font-weight: 100;
-      color: #808080; }
-    .loading-page .counter h1 {
-      color: #ffffff;
-      font-size: 60px;
-      margin-top: -10px; }
-      .loading-page .counter h1.abs {
-        position: absolute;
-        top: 0;
-        width: 100%; }
-    .loading-page .counter hr {
-      background: #808080;
-      border: none;
-      height: 1px; }
-    .loading-page .counter .color {
-      width: 0;
-      overflow: hidden;
-      color: #1a1a1a; }
+
+.loading-page .counter {
+  text-align: center;
+  position: relative;
+  width: 200px; }
+
+.loading-page .counter p {
+  font-size: 40px;
+  font-weight: 100;
+  color: #808080; }
+
+.loading-page .counter h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-top: -10px; }
+
+.loading-page .counter h1.abs {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.loading-page .counter hr {
+  background: #808080;
+  border: none;
+  height: 1px; }
+
+.loading-page .counter .color {
+  width: 0;
+  overflow: hidden;
+  color: #1a1a1a; }
 
 .hex {
   width: 200px;
@@ -353,5 +374,34 @@ h2 {
 
 .name_nav {
   display: inline-block; }
-  .name_nav a h1 {
-    display: inline-block; }
+
+.name_nav a h1 {
+  display: inline-block; }
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .about-title {
+    width: 100vw;
+    height: 100vh; }
+  .about-me {
+    width: 100vw;
+    height: 100vh; }
+  .hex {
+    display: none; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .autofix_sb.fixed {
+    position: fixed !important;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    height: 100%;
+    width: 50%;
+    overflow: auto; }
+  .autofix_sb.fixed.bottom {
+    bottom: 0;
+    position: absolute !important; } }
+
+/* Large devices (large desktops, 1200px and up) */

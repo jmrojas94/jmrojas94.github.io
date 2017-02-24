@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	$(".about-title").autofix_anything({
-	  customOffset: false, 
-	  manual: false, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
-	  onlyInContainer: false // Set this to false if you don't want the fixed container to limit itself to the parent's container.
+	  	manual: true, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
+	  	onlyInContainer: false // Set this to false if you don't want the fixed container to limit itself to the parent's container.
 	});
 
+	if ($(window).width() > 768) {
+        $(".about-title").manualfix()
+    }
 
 	var counter = 0;
 	var c = 0;
