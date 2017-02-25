@@ -28,21 +28,35 @@ $gray: #808080;
 $black_20: rgba(0,0,0,0.2);
 $load-bar: #fff;
 
-//fonts
-$font_0: 'Raleway', sans-serif;
-$font_1: 'Raleway', sans-serif;
-$font_2: 'Raleway', sans-serif;
-
 //urls
 $url_0: url(../public/images/saltlake3.jpg);
 $url_1: url(../public/images/me.jpg);
 
 body {
-	font-family: $font_0;
+	font-family: $font-family;
+}
+
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2.25em;
+}
+h3{
+	font-size: 1.95em;
+}
+h4{
+	font-size: 1.5em;
+}
+h5{
+	font-size: 1.2em;
+}
+h6{
+	font-size: 1.05em;
 }
 
 h2 {
-	font-family: $font_0;
+	font-family: $font-family;
 }
 .App-header {
 	background-image: $url_0;
@@ -134,10 +148,10 @@ background-color: $fav-black;
 }
 
 #head-title {
-	font-family: $font_2, $font_1;
+	font-family: $font-family;
 }
 .typed-cursor {
-	font-family: $font_2, $font_1;
+	font-family: $font-family;
 	opacity: 1;
 	animation: blink 0.7s infinite;
 }
