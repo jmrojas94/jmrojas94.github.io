@@ -42,6 +42,11 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+h1.name {
+  margin-top: -50px;
+  margin-bottom: 200px;
+  font-size: 4em; }
+
 .about-section {
   position: relative;
   display: block;
@@ -67,7 +72,8 @@ h2 {
   margin: 0 auto; }
 
 .about-content {
-  line-height: 120%; }
+  line-height: 30px;
+  padding: 20px; }
 
 .about-content h3 {
   text-align: center; }
@@ -93,7 +99,8 @@ h2 {
 
 .contact-section {
   display: block;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 50px;
   z-index: 1;
   background-color: #1a1a1a; }
 
@@ -319,75 +326,70 @@ h2 {
   -webkit-transform: rotate(-60deg);
   visibility: visible; }
 
-.about-wrapper {
-  position: relative; }
+.cross li {
+  list-style: none; }
 
-#portfolio {
-  width: 100%;
-  margin: 0 auto; }
+/* layout & positioning */
+.logo-container, .circle, .cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%; }
 
-.tile {
-  float: left;
-  min-height: 100px;
-  max-height: 150px;
-  width: 20%;
-  border: 1px #fff solid; }
+/* the cross - the main part of the logo */
+.cross::before, .cross::after {
+  background: black;
+  width: 198px;
+  height: 2px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
 
-.tile:hover {
-  opacity: 0.5; }
+.cross::before {
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg); }
 
-.web {
-  background: #00C5CD; }
+.cross::after {
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-50%) rotate(-45deg); }
 
-.flyers {
-  background: #CC3232; }
-
-.bcards {
-  background: #ddd; }
-
-.category {
-  padding: 10px;
-  border-bottom: 1px #ccc dotted;
-  text-decoration: none;
-  font-family: Arial;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #333;
-  display: inline-block;
+/* general styles for the characters in our logo */
+.characters {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  color: black;
   text-align: center; }
 
-.category:hover {
-  cursor: pointer;
-  background: #333;
-  color: #eee; }
+/* helper classes for quadrant orientation */
+.landscape {
+  width: 140px;
+  height: 70px;
+  line-height: 70px; }
 
-#btn-close-modal {
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  color: #fff; }
+.portrait {
+  width: 70px;
+  height: 140px;
+  line-height: 140px; }
 
-.modal_image {
-  display: block;
-  width: 75%;
-  height: 75%;
-  margin: 0 auto; }
+/* quadrants*/
+#t-q {
+  top: -90px;
+  left: -70px; }
 
-.modal-content {
-  -webkit-box-shadow: 0;
-  box-shadow: 0; }
+#b-q {
+  top: 20px;
+  left: -70px; }
 
-.modal-content {
-  position: relative;
-  background-color: #1a1a1a;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 0;
-  border: 0;
-  border-radius: 0;
-  outline: 0;
-  -webkit-box-shadow: 0;
-  box-shadow: 0; }
+#l-q {
+  top: -70px;
+  left: -90px; }
+
+#r-q {
+  top: -70px;
+  left: 20px; }
+
+.about-wrapper {
+  position: relative; }
 
 .name_nav {
   display: inline-block; }
@@ -395,30 +397,151 @@ h2 {
 .name_nav a h1 {
   display: inline-block; }
 
-/* Small devices (tablets, 768px and up) */
-@media only screen and (max-width: 767px) {
-  .about-title {
-    width: 100vw;
-    height: 100vh; }
-  .about-me {
-    width: 100vw;
-    height: 100vh; }
-  .hex {
-    display: none; } }
+.image {
+  position: relative;
+  border: 0.5px solid #808080; }
 
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 767px) {
-  .autofix_sb.fixed {
-    position: fixed !important;
-    left: auto;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    height: 100%;
-    width: 50%;
-    overflow: auto; }
-  .autofix_sb.fixed.bottom {
-    bottom: 0;
-    position: absolute !important; } }
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  -webkit-transition: opacity .25s ease; }
+
+.overlay .project-label {
+  margin-top: 50%; }
+
+.project:hover .overlay {
+  opacity: 1; }
+
+.project-label {
+  font-family: Helvetica;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 2em; }
+
+.projects {
+  width: 100%;
+  list-style: none;
+  overflow: hidden; }
+
+.projects li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2%;
+  width: 40%; }
+
+.projects a {
+  text-decoration: none;
+  color: #888;
+  display: block;
+  font-size: 16px; }
+
+.projects a img {
+  display: block;
+  max-width: 100%;
+  height: auto !important; }
+
+.projects .project-label {
+  display: block;
+  margin: 5px 0 10px; }
+
+.projects .current a {
+  color: #000; }
+
+.projects .current a:after {
+  content: "";
+  display: table;
+  border-top: none;
+  border-color: #333 transparent;
+  margin: auto; }
+
+.projects h3 {
+  font-size: 16px; }
+
+.projects .details {
+  margin-top: 10px;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background: #444;
+  color: #ddd;
+  right: 2.2449%;
+  left: 2.2449%;
+  padding: 20px;
+  overflow: hidden; }
+
+.projects .details .text {
+  overflow: hidden; }
+
+.contact-form input {
+  margin: 10px;
+  height: 30px;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #808080;
+  color: white; }
+
+.contact-form textarea {
+  margin: 10px;
+  height: auto;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #808080;
+  color: white; }
+
+.contact-form button {
+  margin: 10px;
+  height: 40px;
+  width: 30%;
+  border: none;
+  background: #808080;
+  color: #1a1a1a; }
+
+@media only screen and (max-width: 735px) {
+  .projects {
+    margin: 0 -2.9932%; }
+  .projects li {
+    margin: 45px 2.9932% 0 3.12925%; } }
+
+@media only screen and (max-width: 490px) {
+  .projects {
+    margin: 0 -4.4898%; }
+  .projects li {
+    margin: 45px 4.4898% 0 4.69388%; }
+  .projects .details img {
+    float: none;
+    width: 100%;
+    margin: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .about-section {
+    height: auto;
+    width: 100%; }
+  .about-title {
+    height: auto;
+    width: 100vw; }
+  .about-content {
+    height: auto; }
+  .about-me {
+    width: 100vw; } }
 
 /* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .projects li {
+    width: 90%; }
+  .project-section {
+    height: auto; } }

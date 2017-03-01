@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	$(".about-title").autofix_anything({
 	  	manual: true, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
 	  	onlyInContainer: false // Set this to false if you don't want the fixed container to limit itself to the parent's container.
@@ -65,6 +67,22 @@ $(document).ready(function(){
 		
 	});
 
+	$(".projects>li>a").on("click", function(e){
+	  e.preventDefault();
+	  var li=$(this).parent(),
+	      li_height = li.height(),
+	      details=li.find(".details"), 
+	      details_height=details.height(),
+	      new_height=details_height+40; 
+	  li.toggleClass("current").animate({
+	    paddingBottom: new_height
+	  }, { duration: 200, queue: false }).siblings().removeClass("current");
+	  $(".projects li:not(.current)").animate({
+	    paddingBottom: '0'
+	  }, { duration: 200, queue: false }).find(".details").slideUp(200);
+	  $(".current").find(".details").slideDown(200);
+	    
+	});
 
 })
 
