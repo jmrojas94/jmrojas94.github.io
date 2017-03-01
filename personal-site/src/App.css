@@ -398,7 +398,9 @@ h1.name {
   display: inline-block; }
 
 .image {
-  position: relative;
+  position: relative; }
+
+.image:focus {
   border: 0.5px solid #808080; }
 
 .overlay {
@@ -427,7 +429,7 @@ h1.name {
 .project-label {
   font-family: Helvetica;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.85);
+  color: #808080;
   font-size: 2em; }
 
 .projects {
@@ -537,10 +539,7 @@ h1.name {
   .about-content {
     height: auto; }
   .about-me {
-    width: 100vw; } }
-
-/* Large devices (large desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+    width: 100vw; }
   .projects li {
     width: 90%; }
   .project-section {

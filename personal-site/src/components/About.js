@@ -6,12 +6,12 @@ export default class About extends React.Component {
     	<div id="about" className="about-section">
     		<div className="container-fluid about-wrapper">
           <div className="row">
-            <div id="about-title" className="about-title col-lg-6 col-sm-12 col-md-12">
+            <div id="about-title" className="about-title">
               <div className="text-center content-header">
                 <h2>ABOUT ME</h2>
               </div>
             </div>
-            <div className="about-me col-lg-6 col-sm-12 col-md-12">
+            <div className="about-me">
               {/*<div className="hex">
                 <div className="hex2">
                   <div className="hex3"></div>

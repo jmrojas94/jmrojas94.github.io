@@ -474,6 +474,9 @@ background-color: $fav-black;
 
 .image {
 	position: relative;
+}
+
+.image:focus {
 	border: .5px solid $gray;
 }
 
@@ -506,7 +509,7 @@ background-color: $fav-black;
 .project-label {  
 	font-family:Helvetica;
   font-weight:900;
-	color:rgba(255,255,255,.85);
+	color:$gray;
 	font-size: 2em;
 }
 
@@ -642,19 +645,14 @@ background-color: $fav-black;
 	.about-me {
 		width: 100vw;
 	}
-}
 
-/* Large devices (large desktops, 1200px and up) */
-@media only screen and (max-width: 1200px ) {
-
-	.projects li {
+		.projects li {
     width: 90%;
   }
 
   .project-section {
   	height: auto;
   }
-	
 }
 
 
