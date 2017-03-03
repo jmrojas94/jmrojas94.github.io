@@ -19,7 +19,14 @@ export default class Projects extends React.Component {
                       <div className="details">
                         <div className="text">
                           <h3>peribit</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+                          <p>Peribit is a social media app where through user engagement, content avoids being deleted. 
+                            <br />
+                            <br />
+                            It was created with two other classmates as a final project while at Dev Bootcamp.
+                          </p>
+                          <p><b>LIVE LINK: </b><a href="http://www.peribit.io/">peribit.io</a></p>
+                          <p><a href="https://github.com/jmrojas94/peribit"><b>GITHUB LINK</b></a></p> 
+                          <span><b>TECHNOLOGIES USED: </b>Rails, Bootstrap, Javascript</span> 
                         </div>
                       </div>
                     </li>
@@ -32,7 +39,13 @@ export default class Projects extends React.Component {
                       <div className="details">
                         <div className="text">
                           <h3>top-tracks</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+                          <p>Top-Tracks uses the Spotify API to pull in all of your current most listened to tracks on Spotify. 
+                            
+                          </p>
+                          <br />
+                          <p><b>LIVE LINK: </b><a href="http://spottoptracks.herokuapp.com/">top-tracks</a></p>
+                          <p><a href="https://github.com/jmrojas94/top-tracks"><b>GITHUB LINK</b></a></p> 
+                          <span><b>TECHNOLOGIES USED: </b>Node.js, Bootstrap, Spotify API, Heroku</span> 
                         </div>
                       </div>
                     </li>
@@ -45,7 +58,14 @@ export default class Projects extends React.Component {
                       <div className="details">
                         <div className="text">
                           <h3>resource repository</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+                          <p>Resource Repository is a database of resources where teachers can upload content using a CMS for students, and students can log in and "like" their favorite articles, posts, or links.
+                          <br />
+                          <br />
+                          It was completed as a group project while at Dev Bootcamp.
+                            
+                          </p>
+                          <p><a href="https://github.com/jmrojas94/resources-repository"><b>GITHUB LINK</b></a></p> 
+                          <span><b>TECHNOLOGIES USED: </b>Rails, Bootstrap, Javascript</span>  
                           </div>
                       </div>
                     </li>
@@ -58,7 +78,12 @@ export default class Projects extends React.Component {
                       <div className="details">
                         <div className="text">
                           <h3>game of life</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+                          <p>A React rendition of the Game of Life.
+                            
+                          </p>
+                          <br />
+                          <p><a href="https://github.com/jmrojas94/react_game_of_life"><b>GITHUB LINK</b></a></p> 
+                          <span><b>TECHNOLOGIES USED: </b>React</span>  
                         </div>
                       </div>
                     </li>

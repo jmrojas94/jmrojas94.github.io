@@ -9,13 +9,13 @@ export default class Contact extends React.Component {
             <div className="text-center col-xs-12">
               <h2>LET'S CREATE SOMETHING TOGETHER.</h2>
               <form className="contact-form" method="POST" action="http://formspree.io/jmr5150@gmail.com">
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="EMAIL" />
                 <br />
-                <input type="subject" name="Subject" placeholder="Subject"/>
+                <input type="subject" name="Subject" placeholder="SUBJECT"/>
                 <br />
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea name="message" placeholder="MESSAGE"></textarea>
                 <br />
-                <button type="submit">Send</button>
+                <button type="submit">SEND</button>
               </form>
             </div>
           </div>

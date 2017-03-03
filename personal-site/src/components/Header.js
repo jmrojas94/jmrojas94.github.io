@@ -1,4 +1,5 @@
 import React from 'react';
+import { goToAnchor } from 'react-scrollable-anchor';
 
 export default class Header extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class Header extends React.Component {
     				<h2 className="title">Web Developer</h2>
     			</div>
     		</div>
+    			<a href="#contact"><button className="call-to-action">Let's Work Together</button></a>
       </div>
     );
   }

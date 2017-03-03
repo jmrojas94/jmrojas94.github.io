@@ -1,28 +1,35 @@
 body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-weight: 100; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0; }
 
 h2 {
-  font-size: 2.25em; }
+  font-size: 2.25em;
+  font-weight: 100; }
 
 h3 {
-  font-size: 1.95em; }
+  font-size: 1.95em;
+  font-weight: 100; }
 
 h4 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 100; }
 
 h5 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-weight: 100; }
 
 h6 {
-  font-size: 1.05em; }
-
-h2 {
-  font-family: "Raleway", sans-serif; }
+  font-size: 1.05em;
+  font-weight: 100; }
 
 .App-header {
+  letter-spacing: .5em;
+  text-transform: uppercase;
   background-image: url(../public/images/saltlake3.jpg);
   background-size: cover;
   background-position: center center;
@@ -36,16 +43,166 @@ h2 {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$url_0', sizingMethod='scale')";
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$url_0', sizingMethod='scale'); }
 
+.navigation {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  box-shadow: inset 0 0 0 0 rgba(26, 26, 26, 0.3);
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  visibility: hidden; }
+
+.change-color {
+  box-shadow: inset 0 200px 0 0 rgba(26, 26, 26, 0.5); }
+
+.mobile-nav a {
+  position: relative;
+  display: block;
+  margin: 15px 25px;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.5em; }
+
+.mobile-nav a:hover,
+.mobile-nav a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black; }
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+  visibility: hidden; }
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px; }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white; }
+
+/* General sidebar styles */
+.bm-menu {
+  background: #1a1a1a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em; }
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em; }
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3); }
+
+.navigation a {
+  position: relative;
+  display: inline-block;
+  margin: 10px 50px;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1em; }
+
+.navigation a:hover,
+.navigation a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black; }
+
+.cl-effect-7 a {
+  padding: 5px 0px;
+  text-shadow: none; }
+
+.cl-effect-7 a::before,
+.cl-effect-7 a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  transform: scale(0.85); }
+
+.cl-effect-7 a::after {
+  opacity: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s; }
+
+.cl-effect-7 a:hover::before,
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::before,
+.cl-effect-7 a:focus::after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1); }
+
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::after {
+  top: 0%;
+  opacity: 1; }
+
 .intro {
   position: absolute;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   top: 50%;
   left: 50%;
+  color: white;
   transform: translate(-50%, -50%); }
 
 h1.name {
-  margin-top: -50px;
-  margin-bottom: 200px;
-  font-size: 4em; }
+  padding-bottom: 250px;
+  font-size: 4em;
+  font-weight: 200; }
+
+h2.title {
+  padding-top: 10px;
+  margin-bottom: 0; }
+
+.call-to-action {
+  margin: 0 auto;
+  content: "";
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 80%;
+  left: 25%;
+  border: 1px solid white;
+  background: none;
+  padding: 2vh;
+  color: white;
+  letter-spacing: .5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.5em; }
 
 .about-section {
   position: relative;
@@ -53,14 +210,14 @@ h1.name {
   height: 100vh; }
 
 .about-section h2 {
-  color: #808080; }
+  color: white; }
 
 .about-title {
+  letter-spacing: .5em;
   width: 50%;
   float: left;
   margin: 0 auto;
   height: 100vh;
-  z-index: -2;
   background-color: #1a1a1a; }
 
 .about-title .content-header {
@@ -72,259 +229,37 @@ h1.name {
   margin: 0 auto; }
 
 .about-content {
-  line-height: 30px;
+  margin: 20px 10px;
+  font-size: 1.3em;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 25px;
   padding: 20px; }
 
 .about-content h3 {
   text-align: center; }
 
-.skills-section {
-  display: block;
-  height: 100vh;
-  z-index: 1;
-  background-color: #1a1a1a;
-  margin-top: 200px; }
-
-.skills-section h2 {
-  color: #808080; }
-
 .project-section {
+  letter-spacing: .5em;
+  text-transform: uppercase;
   display: block;
   height: 100vh;
-  z-index: 1;
   background-color: #1a1a1a; }
 
 .project-section h2 {
-  color: #808080; }
+  color: white;
+  margin: 5% auto; }
 
 .contact-section {
+  letter-spacing: .5em;
   display: block;
   height: auto;
   padding-bottom: 50px;
-  z-index: 1;
   background-color: #1a1a1a; }
 
 .contact-section h2 {
-  color: #808080; }
-
-#head-title {
-  font-family: "Raleway", sans-serif; }
-
-.typed-cursor {
-  font-family: "Raleway", sans-serif;
-  opacity: 1;
-  animation: blink 0.7s infinite; }
-
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.menu {
-  position: fixed;
-  right: -200px;
-  width: 260px;
-  height: 100%;
-  top: 0;
-  z-index: 10;
-  text-align: left;
-  transition: all .3s ease; }
-
-.menu.menu-open {
-  right: 0; }
-
-.menu a {
-  margin-left: 20px;
-  color: #808080;
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
-
-.menu a:hover {
-  color: #ffffff; }
-
-.menu a:active {
-  color: #ffffff; }
-
-.menu a > i {
-  float: left;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  width: 25px;
-  font-size: 14px;
-  line-height: 40px;
-  margin: 25px 2px; }
-
-.menu h1.logo a {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 20px; }
-
-.menu h1.logo a:hover {
-  color: #ffffff; }
-
-.menu img.logo {
-  margin: 20px 0;
-  max-width: 160px; }
-
-.menu-wrap {
-  position: absolute;
-  top: 0;
-  left: 60px;
-  background: #1a1a1a;
-  width: 200px;
-  height: 100%; }
-
-.menu-close {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  font-size: 14px;
-  color: #808080;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  top: 20px;
-  right: 5px;
-  transition: all .1s ease-in-out; }
-
-.menu-close:hover {
-  color: #ffffff;
-  transition: all .1s ease-in-out; }
-
-.body-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-  transition: all .3s ease; }
-
-.body-push-toright {
-  left: 200px; }
-
-.body-push-toleft {
-  left: -200px; }
-
-#menuToggle {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: 11;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  cursor: pointer;
-  transition: all .1s ease-in-out; }
-
-#menuToggle:hover {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.2);
-  transition: all .1s ease-in-out; }
-
-.loading-page {
-  background: #1a1a1a;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.loading-page .counter {
-  text-align: center;
-  position: relative;
-  width: 200px; }
-
-.loading-page .counter p {
-  font-size: 40px;
-  font-weight: 100;
-  color: #808080; }
-
-.loading-page .counter h1 {
-  color: #ffffff;
-  font-size: 60px;
-  margin-top: -10px; }
-
-.loading-page .counter h1.abs {
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
-.loading-page .counter hr {
-  background: #808080;
-  border: none;
-  height: 1px; }
-
-.loading-page .counter .color {
-  width: 0;
-  overflow: hidden;
-  color: #1a1a1a; }
-
-.hex {
-  width: 200px;
-  height: 400px;
-  background-color: red;
-  transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  overflow: hidden;
-  visibility: hidden;
-  margin: 0 auto; }
-
-.hex2 {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  overflow: hidden; }
-
-.hex3 {
-  width: 100%;
-  height: 100%;
-  background-image: url(../public/images/me.jpg);
-  background-position: center;
-  background-size: 100%;
-  transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  visibility: visible; }
+  color: white;
+  margin: 5% auto; }
 
 .cross li {
   list-style: none; }
@@ -333,13 +268,14 @@ h1.name {
 .logo-container, .circle, .cross:before, .cross:after {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%; }
 
 /* the cross - the main part of the logo */
 .cross::before, .cross::after {
-  background: black;
-  width: 198px;
+  background: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  width: 250px;
   height: 2px;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%; }
@@ -355,9 +291,10 @@ h1.name {
 /* general styles for the characters in our logo */
 .characters {
   position: absolute;
-  font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  color: black;
+  font-size: 2.5em;
+  color: white;
+  font-weight: 200;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   text-align: center; }
 
 /* helper classes for quadrant orientation */
@@ -373,20 +310,20 @@ h1.name {
 
 /* quadrants*/
 #t-q {
-  top: -90px;
+  top: -110px;
   left: -70px; }
 
 #b-q {
-  top: 20px;
+  top: 40px;
   left: -70px; }
 
 #l-q {
   top: -70px;
-  left: -90px; }
+  left: -110px; }
 
 #r-q {
   top: -70px;
-  left: 20px; }
+  left: 40px; }
 
 .about-wrapper {
   position: relative; }
@@ -401,10 +338,10 @@ h1.name {
   position: relative; }
 
 .image:focus {
-  border: 0.5px solid #808080; }
+  border: 0.5px solid white; }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   text-align: center;
   color: white;
   cursor: pointer;
@@ -427,10 +364,8 @@ h1.name {
   opacity: 1; }
 
 .project-label {
-  font-family: Helvetica;
-  font-weight: 900;
-  color: #808080;
-  font-size: 2em; }
+  color: white;
+  font-size: 1.5em; }
 
 .projects {
   width: 100%;
@@ -447,8 +382,7 @@ h1.name {
 .projects a {
   text-decoration: none;
   color: #888;
-  display: block;
-  font-size: 16px; }
+  display: block; }
 
 .projects a img {
   display: block;
@@ -457,10 +391,11 @@ h1.name {
 
 .projects .project-label {
   display: block;
-  margin: 5px 0 10px; }
+  margin: 20% auto; }
 
 .projects .current a {
-  color: #000; }
+  color: #ddd;
+  font-weight: 200; }
 
 .projects .current a:after {
   content: "";
@@ -469,12 +404,16 @@ h1.name {
   border-color: #333 transparent;
   margin: auto; }
 
+b {
+  color: #1a1a1a;
+  font-weight: 500; }
+
 .projects h3 {
-  font-size: 16px; }
+  font-size: 1.95em; }
 
 .projects .details {
+  letter-spacing: .25em;
   margin-top: 10px;
-  font-size: 16px;
   display: none;
   position: absolute;
   background: #444;
@@ -493,8 +432,9 @@ h1.name {
   width: 50%;
   background: none;
   border: none;
-  border-bottom: 1px solid #808080;
-  color: white; }
+  border-bottom: 1px solid white;
+  color: #ddd;
+  letter-spacing: 1px; }
 
 .contact-form textarea {
   margin: 10px;
@@ -502,16 +442,41 @@ h1.name {
   width: 50%;
   background: none;
   border: none;
-  border-bottom: 1px solid #808080;
-  color: white; }
+  border-bottom: 1px solid white;
+  color: #ddd;
+  letter-spacing: 1px; }
 
 .contact-form button {
   margin: 10px;
   height: 40px;
   width: 30%;
   border: none;
-  background: #808080;
-  color: #1a1a1a; }
+  letter-spacing: .25em;
+  background: white;
+  color: black; }
+
+.footer {
+  background-color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-weight: 100;
+  color: white; }
+
+.footer b {
+  font-weight: 500;
+  color: white; }
+
+.footer a {
+  display: inline-block;
+  margin: 20px;
+  color: #ddd; }
+
+.footer a:hover {
+  color: black; }
+
+.social {
+  margin: 0 auto;
+  width: 350px; }
 
 @media only screen and (max-width: 735px) {
   .projects {
@@ -544,3 +509,44 @@ h1.name {
     width: 90%; }
   .project-section {
     height: auto; } }
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+  .App-header {
+    background-position: 90%; } }
+
+@media only screen and (max-width: 375px) {
+  h2.title {
+    font-size: 1.5em; }
+  .social {
+    width: 100%; }
+  .footer a {
+    margin: 10px; } }
+
+@media only screen and (max-width: 414px) {
+  h1.name {
+    font-size: 2.3em; } }
+
+@media only screen and (max-width: 499px) {
+  .App-header {
+    background-position: 80%; }
+  .about-content {
+    font-size: 1em; } }
+
+@media only screen and (min-width: 600px) {
+  .navigation {
+    visibility: visible; } }
+
+@media only screen and (max-width: 599px) {
+  .bm-burger-button {
+    visibility: visible; } }
+
+@media only screen and (max-height: 750px) {
+  .call-to-action {
+    top: 85%; } }
+
+@media only screen and (max-width: 768px) {
+  .call-to-action {
+    letter-spacing: .25em;
+    font-size: 1em;
+    width: 75%;
+    left: 12%; } }

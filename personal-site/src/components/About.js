@@ -26,7 +26,7 @@ export default class About extends React.Component {
                       I grew up in a small town in Southwest Texas, where boredom led me towards honing creative skills in music and art. Eager to pursue a career where creativity was at the forefront, I started learning graphic design, photography, and guitar. I played in a mildly successful local band which taught me networking skills, as well as management and marketing.
                   </p>
                   <p>
-                      As I tried to find a place where I can use creativity, I discovered the world of software development. I decided to attend Dev Bootcamp in Austin, TX in order to streamline my dive into this career field and I do not regret anything. I quickly learned the basics of JavaScript, SQL, HTML, CSS, jquery, ajax, Rails, and git among other things. My passion for furthering human and technological connection has grown.
+                      As I tried to find a place where I can use creativity, I discovered the world of software development. I decided to attend Dev Bootcamp in Austin, TX in order to streamline my dive into this career field and I do not regret anything. I quickly learned the basics of JavaScript, SQL, HTML, CSS, jQuery, Rails, and Git among other things. My passion for furthering human and technological connection has grown and led me to teaching myself React and Node.js.
                   </p>
                   <p>
                       Now, through my new-found passion, I will continue to push myself in order to learn and grow as a developer, a teammate, and ultimately, a person.
