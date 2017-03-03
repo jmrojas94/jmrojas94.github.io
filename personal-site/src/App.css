@@ -208,9 +208,8 @@ h2.title {
   position: relative;
   display: block;
   height: 100vh; }
-
-.about-section h2 {
-  color: white; }
+  .about-section h2 {
+    color: white; }
 
 .about-title {
   letter-spacing: .5em;
@@ -219,9 +218,8 @@ h2.title {
   margin: 0 auto;
   height: 100vh;
   background-color: #1a1a1a; }
-
-.about-title .content-header {
-  margin: 50% auto; }
+  .about-title .content-header {
+    margin: 50% auto; }
 
 .about-me {
   width: 50%;
@@ -235,9 +233,8 @@ h2.title {
   letter-spacing: 1px;
   line-height: 25px;
   padding: 20px; }
-
-.about-content h3 {
-  text-align: center; }
+  .about-content h3 {
+    text-align: center; }
 
 .project-section {
   letter-spacing: .5em;
@@ -245,10 +242,9 @@ h2.title {
   display: block;
   height: 100vh;
   background-color: #1a1a1a; }
-
-.project-section h2 {
-  color: white;
-  margin: 5% auto; }
+  .project-section h2 {
+    color: white;
+    margin: 5% auto; }
 
 .contact-section {
   letter-spacing: .5em;
@@ -256,10 +252,9 @@ h2.title {
   height: auto;
   padding-bottom: 50px;
   background-color: #1a1a1a; }
-
-.contact-section h2 {
-  color: white;
-  margin: 5% auto; }
+  .contact-section h2 {
+    color: white;
+    margin: 5% auto; }
 
 .cross li {
   list-style: none; }
@@ -330,9 +325,8 @@ h2.title {
 
 .name_nav {
   display: inline-block; }
-
-.name_nav a h1 {
-  display: inline-block; }
+  .name_nav a h1 {
+    display: inline-block; }
 
 .image {
   position: relative; }
@@ -461,10 +455,9 @@ b {
   letter-spacing: .5em;
   font-weight: 100;
   color: white; }
-
-.footer b {
-  font-weight: 500;
-  color: white; }
+  .footer b {
+    font-weight: 500;
+    color: white; }
 
 .footer a {
   display: inline-block;
