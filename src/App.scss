@@ -523,6 +523,8 @@ b {
 	border-bottom: 1px solid $gray;
 	color: #ddd;
 	letter-spacing: 1px;
+	border-radius: 0;
+	box-shadow: 0;
 }
 
 .contact-form textarea {
@@ -534,6 +536,8 @@ b {
 	border-bottom: 1px solid $gray;
 	color: #ddd;
 	letter-spacing: 1px;
+	border-radius: 0;
+	box-shadow: 0;
 }
 
 .contact-form button {
@@ -544,6 +548,8 @@ b {
 	letter-spacing: .25em;
 	background: white;
 	color: black;
+	border-radius: 0;
+	box-shadow: 0;
 }
 
 .footer {
@@ -594,6 +600,9 @@ b {
     float: none;
     width: 100%;
     margin: 0;
+  }
+  .email {
+  	font-size: .7em;
   }
 }
 
@@ -657,7 +666,7 @@ b {
 
 @media only screen and (max-width: 499px) {
 	.App-header {
-  	background-position: 80%;
+  	background-position: 90%;
   }
 
   .about-content {
@@ -665,13 +674,13 @@ b {
   }
 }
 
-@media only screen and (min-width: 600px ) {
+@media only screen and (min-width: 600px )and (min-height: 675px) {
 	.navigation {
 		visibility: visible;
 	}
 }
 
-@media only screen and (max-width:599px ) {
+@media only screen and (max-width:599px )and (max-height: 674px) {
 	.bm-burger-button {
 		visibility: visible;
 	}
@@ -694,6 +703,71 @@ b {
 
 @media only screen and (min-width:1200px ) {
 	.call-to-action {
+	}
+}
+
+@media only screen and (max-height: 750px) and (min-height: 321px) {
+	h1.name {
+		font-size: 2em;
+		padding-bottom: 160px;
+	}
+
+	h2.title {
+		font-size: 1.5em;
+	}
+
+	.cross::before,  .cross::after {
+		width: 150px;
+	}
+
+
+	#t-q {
+	top: -90px;
+	left: -70px;
+	}
+	#b-q {
+		top: 20px;
+		left: -70px;
+	}
+	#l-q {
+		top: -70px;
+		left: -90px;
+	}
+	#r-q {
+		top: -70px;
+		left: 20px;
+	}
+}
+
+@media only screen and (max-height: 320px) {
+	h1.name {
+		font-size: 2em;
+		padding-bottom: 125px;
+	}
+
+	h2.title {
+		font-size: 1.3em;
+	}
+
+	.cross::before,  .cross::after {
+		width: 150px;
+	}
+
+	#t-q {
+	top: -90px;
+	left: -70px;
+	}
+	#b-q {
+		top: 20px;
+		left: -70px;
+	}
+	#l-q {
+		top: -70px;
+		left: -90px;
+	}
+	#r-q {
+		top: -70px;
+		left: 20px;
 	}
 }
 	
